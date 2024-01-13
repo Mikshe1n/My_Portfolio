@@ -61,6 +61,27 @@ html, body {
 }
 
 /* General */
+/* Стили для модального окна */
+#myModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #252525;
+    border: 1px solid #ccc;
+    z-index: 1;
+    text-align: center;
+  }
+
+  /* Стили для кнопок в модальном окне */
+  #myModal button {
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
 
 .container {
     margin: 0 auto;
@@ -273,6 +294,7 @@ html, body {
     height: 48px;
     padding: 12px 28px;
 
+    cursor: pointer;
     border-radius: 5px;
     background-color: var(--accent);
     color: var(--white);

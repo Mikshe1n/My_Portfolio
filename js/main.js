@@ -43,3 +43,34 @@ btnDarkMode.onclick = function () {
         localStorage.setItem("darkMode", "light");
     }
 };
+
+// function openModal() {
+//     document.getElementById('myModal').style.display = 'block';
+//   }
+
+//   // Функция для скачивания файла в зависимости от выбранного языка
+//   function downloadFile(language) {
+//     alert('Выбран язык: ' + language);
+    
+//     // Определение имени файла в зависимости от выбранного языка
+//     var fileName = language.toLowerCase() + '_file.txt';
+    
+//     // Создание искусственного Blob (binary large object) файла
+//     var fileContent = 'Текст на выбранном языке: ' + language;
+//     var blob = new Blob([fileContent], { type: 'text/plain' });
+
+//     // Создание ссылки для скачивания файла
+//     var link = document.createElement('a');
+//     link.href = URL.createObjectURL(blob);
+//     link.download = fileName;
+
+//     // Добавление ссылки в DOM и запуск скачивания файла
+//     document.body.appendChild(link);
+//     link.click();
+
+//     // Удаление ссылки из DOM
+//     document.body.removeChild(link);
+
+//     // Закрытие модального окна
+//     document.getElementById('myModal').style.display = 'none';
+//   }
